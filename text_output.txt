@@ -1,0 +1,115 @@
+runfile('C:/Users/91807/.spyder-py3/ecomm.py', wdir='C:/Users/91807/.spyder-py3')
+   ID Warehouse_block  ... Weight_in_gms  Reached.on.Time_Y.N
+0   1               D  ...          1233                    1
+1   2               F  ...          3088                    1
+2   3               A  ...          3374                    1
+3   4               B  ...          1177                    1
+4   5               C  ...          2484                    1
+
+[5 rows x 12 columns]
+(10999, 12)
+ID                      int64
+Warehouse_block        object
+Mode_of_Shipment       object
+Customer_care_calls     int64
+Customer_rating         int64
+Cost_of_the_Product     int64
+Prior_purchases         int64
+Product_importance     object
+Gender                 object
+Discount_offered        int64
+Weight_in_gms           int64
+Reached.on.Time_Y.N     int64
+dtype: object
+Warehouse_block        0
+Mode_of_Shipment       0
+Customer_care_calls    0
+Customer_rating        0
+Cost_of_the_Product    0
+Prior_purchases        0
+Product_importance     0
+Gender                 0
+Discount_offered       0
+Weight_in_gms          0
+Reached.on.Time_Y.N    0
+dtype: int64
+0
+       Customer_care_calls  Customer_rating  ...  Weight_in_gms  Reached.on.Time_Y.N
+count         10999.000000     10999.000000  ...   10999.000000         10999.000000
+mean              4.054459         2.990545  ...    3634.016729             0.596691
+std               1.141490         1.413603  ...    1635.377251             0.490584
+min               2.000000         1.000000  ...    1001.000000             0.000000
+25%               3.000000         2.000000  ...    1839.500000             0.000000
+50%               4.000000         3.000000  ...    4149.000000             1.000000
+75%               5.000000         4.000000  ...    5050.000000             1.000000
+max               7.000000         5.000000  ...    7846.000000             1.000000
+
+[8 rows x 7 columns]
+  Warehouse_block Mode_of_Shipment  ...  Weight_in_gms  Reached.on.Time_Y.N
+0               D           Flight  ...           1233                    1
+1               F           Flight  ...           3088                    1
+2               A           Flight  ...           3374                    1
+3               B           Flight  ...           1177                    1
+4               C           Flight  ...           2484                    1
+
+[5 rows x 11 columns]
+
+
+
+
+Warehouse_block [3 4 0 1 2]
+Mode_of_Shipment [0 2 1]
+Product_importance [1 2 0]
+Gender [0 1]
+
+
+Fitting 5 folds for each of 256 candidates, totalling 1280 fits
+Best parameters:  {'criterion': 'gini', 'max_depth': 8, 'min_samples_leaf': 8, 'min_samples_split': 2, 'random_state': 42}
+Training accuracy:  0.7253096942834413
+Fitting 5 folds for each of 256 candidates, totalling 1280 fits
+Best parameters:  {'criterion': 'gini', 'max_depth': 6, 'min_samples_leaf': 6, 'min_samples_split': 2, 'random_state': 0}
+Training accuracy:  0.6913285600636436
+Training accuracy:  0.6356404136833731
+Training accuracy:  0.7782702579838618
+
+
+
+Random Forest Classifier: 
+               precision    recall  f1-score   support
+
+           0       0.57      0.89      0.70       908
+           1       0.87      0.54      0.66      1292
+
+    accuracy                           0.68      2200
+   macro avg       0.72      0.71      0.68      2200
+weighted avg       0.75      0.68      0.68      2200
+
+Decision Tree Classifier: 
+               precision    recall  f1-score   support
+
+           0       0.57      0.97      0.72       908
+           1       0.95      0.49      0.65      1292
+
+    accuracy                           0.69      2200
+   macro avg       0.76      0.73      0.68      2200
+weighted avg       0.80      0.69      0.68      2200
+
+Logistic Regression: 
+               precision    recall  f1-score   support
+
+           0       0.55      0.58      0.57       908
+           1       0.69      0.67      0.68      1292
+
+    accuracy                           0.63      2200
+   macro avg       0.62      0.62      0.62      2200
+weighted avg       0.64      0.63      0.63      2200
+
+KNN Classifier: 
+               precision    recall  f1-score   support
+
+           0       0.58      0.61      0.59       908
+           1       0.71      0.68      0.70      1292
+
+    accuracy                           0.65      2200
+   macro avg       0.65      0.65      0.65      2200
+weighted avg       0.66      0.65      0.66      2200
